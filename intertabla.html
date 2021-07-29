@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./bulma.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card row-custom">
+        <div class="card-content">
+
+            <div class="content" style="height: 145px;">
+                <div class="columns">
+                    <div class="column">
+                        <button class="button is-primary" style="width: 85% !important; height: 65% !important;"
+                            onclick="addData(); ">Aceptar</button>
+                    </div> 
+
+                    <div class="column">
+                        <input id="nombre" class="input-custom input is-primary" type="text" placeholder="Nombre">
+                        <br>
+                        <br>
+                        <br>
+                        <input id="ap_mat" class="input-custom input is-primary" type="text" placeholder="Ap_Materno">
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="column">
+                        <input id="ap_pat" class="input-custom input is-primary" type="text" placeholder="Ap_Paterno">
+                        <br>
+                        <br>
+                        <br>
+                        <input id="edad" class="input-custom input is-primary" type="int" placeholder="Edad">
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+
+                <div class="tabldatos">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th title="Nombre">Nombre</th><th title="Ap_Paterno">Ap_Paterno</th>
+                                <th title="Ap_Materno">Ap_Materno</th><th title="Edad">Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabladatos"></tbody>
+                     </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="./main.js"></script>
+    </footer>
+</body>
+
+</html>
